@@ -14,6 +14,8 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'angular-rails-engine'
+gem 'angularjs-rails-resource', '~> 0.2.3'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -23,6 +25,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -51,11 +54,24 @@ gem 'yaml_db', git: 'https://github.com/jetthoughts/yaml_db', ref: 'fb4b6bd7e12d
 gem 'activerecord-import'
 gem 'counter_culture', '~> 0.1.18'
 gem 'rails_config'
+gem 'rroonga'
+gem 'activegroonga'
+gem 'bootstrap-sass'
+gem 'bootswatch-rails'
+gem 'compass-rails'
 #gem 'whenever', :require => false
 
 group :development do
   gem 'bullet'
   gem 'rack-mini-profiler'
+  gem 'rspec'
+  gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'guard-livereload', '~> 2.3.0'
+  gem 'terminal-notifier-guard'
+  gem "rdoc", ">= 2.4.2"
+  gem "yard"
+  gem 'tapp'
 end
 
 # Include database gems for the adapters found in the database
