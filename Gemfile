@@ -68,6 +68,7 @@ gem 'bootswatch-rails'
 gem 'compass-rails'
 gem 'dotenv-rails'
 #gem 'whenever', :require => false
+gem 'therubyracer'
 
 group :development do
   gem 'bullet'
@@ -80,7 +81,6 @@ group :development do
   gem "rdoc", ">= 2.4.2"
   gem "yard"
   gem 'tapp'
-  gem 'rspec-rails'
   gem 'factory_girl_rails'
 end
 
