@@ -1,3 +1,24 @@
+
+- MySQLをインストール(develも忘れずに)
+- Groongaをインストール
+
+http://groonga.org/docs/install/centos.html#centos-6
+
+- develもインストール(これやらないとメモリ不足で落ちる可能性あり)
+
+`sudo yum install groonga-devel -y`
+
+
+## Todo
+
+- bootstrap化
+- AngularJS化
+- AD/LDAP連携
+- ロール設定?
+
+
+↓は本家Readme
+
 Lodge
 =====
 

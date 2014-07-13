@@ -26,6 +26,13 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
+# Auth
+gem "net-ldap",   group: :ldap
+gem 'active_directory', '~> 1.5.5', group: :active_directory
+group :openid do
+  gem "ruby-openid", "~> 2.3.0", :require => "openid"
+  gem "rack-openid"
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -54,7 +61,7 @@ gem 'yaml_db', git: 'https://github.com/jetthoughts/yaml_db', ref: 'fb4b6bd7e12d
 gem 'activerecord-import'
 gem 'counter_culture', '~> 0.1.18'
 gem 'rails_config'
-gem 'rroonga'
+gem 'rroonga' , '~> 4.0.3'
 gem 'activegroonga'
 gem 'bootstrap-sass'
 gem 'bootswatch-rails'
