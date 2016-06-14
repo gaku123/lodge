@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'listen', '3.0.6'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'
 # Use SCSS for stylesheets
@@ -38,7 +38,7 @@ end
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+ gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -60,7 +60,7 @@ gem 'diffy'
 gem 'yaml_db', git: 'https://github.com/jetthoughts/yaml_db', ref: 'fb4b6bd7e12de3cffa93e0a298a1e5253d7e92ba'
 gem 'activerecord-import'
 gem 'counter_culture', '~> 0.1.18'
-gem 'rails_config'
+gem 'config', github: 'railsconfig/config'
 gem 'rroonga' , '~> 4.0.3'
 gem 'activegroonga'
 gem 'bootstrap-sass'

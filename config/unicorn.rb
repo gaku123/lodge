@@ -1,14 +1,15 @@
 worker_processes 2
+
+app_path = "/var/lib/lodge"
+
+listen File.expand_path('tmp/unicorn.sock', app_path)
+pid File.expand_path('tmp/unicorn.pid', app_path)
+stderr_path File.expand_path('log/unicorn.stderr.log', app_path)
+stdout_path File.expand_path('log/unicorn.stdout.log', app_path)
+
 timeout 15
+
 preload_app true
-listen "0.0.0.0:3000", :tcp_nopush => true
-
-working_directory "/vagrant"
-
-stderr_path "/vagrant/log/unicorn.stderr.log"
-stdout_path "/vagrant/log/unicorn.stdout.log"
-
-pid "/vagrant/tmp/unicorn.pid"
 
 GC.copy_on_write_friendly = true if GC.respond_to?(:copy_on_write_friendly=)
 
